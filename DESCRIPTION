@@ -1,0 +1,30 @@
+Package: opengraph
+Type: Package
+Title: Tools to Mine 'Open Graph'-like Tags From 'HTML' Content
+Version: 0.1.0
+Date: 2017-12-23
+Authors@R: c(
+    person("Bob", "Rudis", email = "bob@rud.is", role = c("aut", "cre"), 
+           comment = c(ORCID = "0000-0001-5670-2640"))
+  )
+Author: Bob Rudis (bob@rud.is)
+Maintainer: Bob Rudis <bob@rud.is>
+Description: Many services such as 'Facebook' and 'Twitter' rely on 'Open Graph'-like tags 
+    (<http://ogp.me/>) to build a formalized knowledge graph from 'HTML' content metadata. 
+    Tools are providfed to extract and analyze this data.
+URL: https://github.com/hrbrmstr/opengraph
+BugReports: https://github.com/hrbrmstr/opengraph/issues
+License: AGPL
+Encoding: UTF-8
+Suggests:
+    testthat,
+    covr
+Depends:
+    R (>= 3.2.0)
+Imports:
+    rvest,
+    xml2,
+    purrr,
+    stringi,
+    httr
+RoxygenNote: 6.0.1.9000
