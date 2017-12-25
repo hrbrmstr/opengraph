@@ -86,7 +86,9 @@ filter(tags, is_valid) %>%
   count(is_valid, orig_url) -> valid_sites
 
 nsites <- length(unique(valid_sites$orig_url))
+```
 
+```{r og1, fig.width=9}
 ggplot() +
   ggalt::geom_bkde(data=valid_sites, aes(n, y=..count..), color="#3f007d", fill="#3f007d", size=0.5, alpha=3/5, bandwidth=1) +
   geom_rug(data=valid_sites, aes(n), color="#3f007d", size=0.25) +
